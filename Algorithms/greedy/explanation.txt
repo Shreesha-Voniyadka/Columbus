@@ -1,0 +1,17 @@
+======================== ALGORITHM : GREEDY ==============================
+
+Solving the optimisation problem in effective way taking decision that result in most evident and immediate benefit 
+
+It is called “greedy” because it tries to find the best solution by making the best choice at each step, 
+without considering future steps or the consequences of the current decision.
+
+The greedy algorithm is a method used in optimization problems 
+where the goal is to make the locally optimal choice at each stage with the hope of finding a global optimum
+
+Summary : optimising the problem without thinking consequences by taking a decision at that moment
+
+Use cases : 
+    1. Allocations (Think about os schedulers)
+    2. Minimum spanning trees( Graphs )
+    3. Coin Change problem 
+    4. Huffman ( details are required)
