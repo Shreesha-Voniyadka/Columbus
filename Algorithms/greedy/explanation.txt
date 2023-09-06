@@ -10,8 +10,11 @@ where the goal is to make the locally optimal choice at each stage with the hope
 
 Summary : optimising the problem without thinking consequences by taking a decision at that moment
 
-Use cases : 
-    1. Allocations (Think about os schedulers)
-    2. Minimum spanning trees( Graphs )
-    3. Coin Change problem 
-    4. Huffman ( details are required)
+Problems present in this type of algorithms
+1. Activity selection
+2. Huffman coding and decoding
+3. Water connection problem
+4. Jobsequece problem 
+5. Bracketbalancing 
+6. Egyptian fraction
+7. Assign mice to holes
