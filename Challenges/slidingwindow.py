@@ -27,3 +27,5 @@ def start_end_sliding_window(self, seq):
             
         # or process logic after pointers movement
         self.process_logic2(start, end)
+if __name__=="__main__":
+    start_end_sliding_window(seq)
