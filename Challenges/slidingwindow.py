@@ -12,20 +12,25 @@
 
 # start & end of sliding window: |start-> ... end->|
 # short version of sliding window, focus on two pointers
-def start_end_sliding_window(self, seq):
-    start, end = 0, 0
-    while end < len(seq):
-        # end pointer grows in the outer loop
-        end += 1
-        
-        # start pointer grows with some restrict
-        while self.start_condition(start):
-            # process logic before pointers movement
-            self.process_logic1(start, end)
-            # start grows in the inner loop
-            start += 1
-            
-        # or process logic after pointers movement
-        self.process_logic2(start, end)
-if __name__=="__main__":
-    start_end_sliding_window(seq)
+""" This is very important concept please take this carefully """
+
+def max_subarray_sum(arr, k):
+    n = len(arr)
+    if n < k:
+        return "Invalid input"
+
+    max_sum = float('-inf')
+    window_sum = sum(arr[:k])
+
+    for i in range(n - k + 1):
+        max_sum = max(max_sum, window_sum)
+        if i + k < n:
+            window_sum = window_sum - arr[i] + arr[i + k]
+
+    return max_sum
+
+# Example usage:
+array = [4, 2, 1, 7, 8, 1, 2, 8, 1, 0]
+k = 3
+result = max_subarray_sum(array, k)
+print("Maximum sum of a subarray of size", k, ":", result)
