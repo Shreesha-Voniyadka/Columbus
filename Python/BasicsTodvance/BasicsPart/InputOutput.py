@@ -2,10 +2,18 @@
 Input and Output in Python. 
 """
 """
-Point to be notes i have taken all from geeks for geeks so complete material credit goes to geeks for geeks
 """
 # Input Syntax : 
 variable_name = input('STATEMENT') # Single Input
+variable_name = datatype(input('STATEMENT')) # Single Input
+
+# For list
+lst = [] 
+n = int(input("Enter number of elements : "))
+for i in range(0, n):
+    ele = int(input())
+    lst.append(ele)
+
 variable_name = raw_input('STATEMENT') 
 input().split(separator, maxsplit) # Multiple Inputs, can also use list comprehension
 
