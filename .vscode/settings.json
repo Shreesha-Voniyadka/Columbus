@@ -1,5 +1,6 @@
 {
     "[python]": {
         "editor.defaultFormatter": null
-    }
+    },
+    "python.REPL.enableREPLSmartSend": false
 }
